@@ -2,3 +2,107 @@
   margin: 0;
   padding: 0;
 }
+
+header {
+  height: 400px;
+  width: 100%;
+  background-color: lightgrey;
+}
+.generale {
+  background-color: black;
+  width: 100%;
+  height: 600px;
+}
+
+/* definizione blocco a 3 colonne */
+
+.threerow {
+  background-color: lime;
+}
+
+.threerow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bloccotitle {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.colonna {
+  float: left;
+  width: 25%;
+  height: 100px;
+  background-color: white;
+  margin: 2%;
+}
+
+/* definizione blocco a due colonne */
+
+.tworow {
+  background-color: yellow
+}
+
+.tworow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.colonnadue {
+  float: left;
+  height: 100px;
+  width: 45%;
+  background-color: white;
+  margin: 2%;
+}
+
+/* definizione blocco simile header */
+
+.similetitle {
+  background-color: blue;
+}
+
+.similetitle::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowblue {
+  float: left;
+  height: 100px;
+  width: 45%;
+  background-color: white;
+  margin: 2%;
+}
+
+/* definizione blocco ad una colonna */
+
+.onerow {
+  height: 300px;
+  width: 100%;
+  background-color: pink;
+  position: relative;
+}
+
+.unica {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 90px;
+  width: 100px;
+}
+
+/* definizione footer */
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: #17406B
+}
